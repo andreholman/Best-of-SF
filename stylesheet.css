@@ -101,8 +101,8 @@ header {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 13px;
+  width: 13px;
   margin: 0 3px;
   background-color: #bbb;
   border-radius: 50%;
@@ -116,13 +116,20 @@ header {
 
 .active {
   background-color: #2193F6;
-  margin-top: 1px;
   height: 13px;
   width: 13px;
 }
 
 .active:hover {
-  background-color: #FFF;
+  background-color: #2193F6;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+  padding: -75px 0 0 -75px;
 }
 
 /* Fading animation */
