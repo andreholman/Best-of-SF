@@ -1,0 +1,238 @@
+body {
+  margin:0;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  text-align: center;
+  font-size: 120%;
+}
+
+.icon-bar {
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  overflow: auto;
+  margin-top: -77px;
+  position: fixed !important;
+  z-index: 2;
+}
+
+.icon-bar a {
+  width: 20%;
+  height: 50px;
+  padding: 12px 0;
+  float: left;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 10px solid #000;
+  text-decoration: none;
+  margin: 0;
+}
+
+.icon-bar i {
+	font-size: 37px;
+}
+
+.icon-bar a:hover {
+  border-bottom: 10px solid #666;
+}
+
+.activelink {
+  border-bottom: 10px solid #2196F3 !important;
+  background: #000;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 59%;
+  position: relative;
+  margin-left: 0;
+  margin-top: 77px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.45s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.45)
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, darken background color*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: rgba(0,0,0,0.45);
+  font-size: 19px;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.45s ease;
+}
+
+.dot:hover {
+  background-color: #666;
+}
+
+.active {
+  background-color: #2193F6;
+  margin-top: 1px;
+  height: 13px;
+  width: 13px;
+}
+
+.active:hover {
+  background-color: #FFF;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: .4} 
+  100% {opacity: 1}
+}
+
+@keyframes fade {
+  0% {opacity: .4} 
+  100% {opacity: 1}
+}
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -75px 0 0 -75px;
+  padding: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #2196F3;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  0% { bottom:-100px; opacity:0 } 
+  100% { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  0% { bottom:-100px; opacity:0 } 
+  100% { bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+.social {
+  font-size: 20px;
+  display: inline;
+  margin: 10px;
+}
+
+footer {
+  background-color: #eee;
+  color: #444;
+  margin-top: 20px;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 769px) {
+  .dot {
+    	width: 13px;
+    	height: 13px;
+    	margin: 0 1px;
+  }
+  
+  .active {
+    width: 11px;
+    height: 11px;
+  }
+  
+  .i {
+		font-size: 82%;
+	}
+	
+	.text {
+		font-size: 13.5px;
+	}
+	
+	.slideshow-container {
+		max-width: 100%;
+	}
+}
