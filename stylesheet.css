@@ -209,11 +209,11 @@ header {
 }
 
 section {
-	
+	text-align: center;
 }
 
 section h2 {
-	border-bottom: 2px;
+	border-bottom: 2px solid #444;
 	width: 40%;
 }
 footer {
