@@ -127,9 +127,9 @@ header {
 #logo {
   position: absolute;
   left: 50%;
-  top: 50%;
-  margin: -100px 0 0 -75px;
-  padding: -100px 0 0 -75px;
+  top: 47%;
+  margin: -75px 0 0 -75px;
+  padding: -75px 0 0 -75px;
 }
 
 /* Fading animation */
